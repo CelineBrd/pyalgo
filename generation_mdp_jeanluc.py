@@ -5,16 +5,20 @@ Génération de mot de passe
 @version 1.0.0
 """
 import random
+# Déclaration des tableaux
 alphabetMin = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 alphabetMaj = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 chiffres = ["0","1","2","3","4","5","6","7","8","9"]
 ponctuation = [".",";",":","!","?","/","\\",",","#","@","$","&",")","(","\""]
 
 tailleMdp = random.randint(8,12)
+
+# Déclaration des 3 caractères indispensables
 theMaj = alphabetMaj[random.randint(0,25)]
 theDigit = chiffres[random.randint(0,9)]
 theDot = ponctuation[random.randint(0,14)]
 
+# Mot de passe avec les 3 caractères indispensables qui répondent aux caractéristiques 
 password = [theMaj, theDigit, theDot]
 
 while len(password) < tailleMdp:

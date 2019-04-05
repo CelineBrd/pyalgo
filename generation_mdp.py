@@ -45,43 +45,9 @@ if nbMin != 0:
     for i in range(nbMin):
         passwordDesordre[i+nbMaj+nbChiffres+nbPonctuation] = alphabetMin[random.randint(0,25)]
 print(passwordDesordre)
-
-
-"""
-indice1 = 0
-indice2 = 0
-indice3 = 0
-indice4 = 0 
-indice5 = 0
-indice6 = 0
-indice7 = 0
-indice8 = 0
-indice9 = 0
-indice10 = 0
-indice11 = 0
-indice12 = 0
-indiceList = [indice1,indice2,indice3,indice4,indice5,indice6,indice7,indice8,indice9,indice10,indice11,indice12]
-print(indiceList)
-
-
-indiceMaxPassword = tailleMdp - 1
-indice1 = random.randint(0,indiceMaxPassword)
-password[indice1] = passwordDesordre[0]
-
-indice2 = random.randint(0,indiceMaxPassword)
-while indice2 == indice1:
-    indice2 = random.randint(0,indiceMaxPassword)
-password[indice2] = passwordDesordre[1]
-
-indice3 = random.randint(0,indiceMaxPassword)
-while indice3 == indice1 or indice3 == indice2:
-    indice3 = random.randint(0,indiceMaxPassword)
-password[indice3] = passwordDesordre[2]
-
-indice4 = random.randint(0,indiceMaxPassword)
-while indice4 == indice1 or indice4 == indice2 or indice4 """
-print(password)
-
-"""print(password)
 random.shuffle(passwordDesordre)
-print(passwordDesordre)"""
+print(passwordDesordre)
+
+print("Génération d'un mot de passe:")
+for i,value in enumerate(passwordDesordre):
+    print(value, end = '')
